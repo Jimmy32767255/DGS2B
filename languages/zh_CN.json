@@ -9,6 +9,15 @@
         "dark": "深色"
     },
     
+    "personalization": {
+        "button": "个性化",
+        "title": "个性化设置",
+        "accent_color": "强调色",
+        "choose_color": "选择颜色",
+        "background": "背景图片",
+        "choose_image": "选择图片"
+    },
+    
     "language": {
         "setting": "语言设置"
     },
@@ -17,7 +26,7 @@
         "management": "设备管理",
         "scan": "扫描设备",
         "connect": "连接设备",
-        "status": "当前设备: {0}",
+        "status": "设备状态: {0}",
         "connected": "已连接",
         "disconnected": "未连接",
         "unknown": "未知设备"
@@ -26,86 +35,85 @@
     "server": {
         "config": "服务器配置",
         "address": "服务器地址:",
-        "save": "保存服务器地址"
+        "save": "保存地址",
+        "connect": "连接服务器"
     },
     
     "strength": {
-        "config": "强度上限配置",
-        "channel_a_limit": "A通道上限:",
-        "channel_b_limit": "B通道上限:",
-        "save": "保存配置"
+        "config": "强度配置",
+        "channel_a_limit": "A通道最大强度:",
+        "channel_b_limit": "B通道最大强度:",
+        "save": "保存设置"
     },
     
     "status": {
         "realtime": "实时状态",
-        "channel_a": "A通道强度: {0}/{1}",
-        "channel_b": "B通道强度: {0}/{1}",
-        "battery": "电量: {0}%",
-        "signal_strength": "信号: {0}dBm",
-        "signal_unknown": "信号: --dBm",
-        "language_changed": "🌐 已切换到{0}"
+        "channel_a": "A通道: {0}/{1}",
+        "channel_b": "B通道: {0}/{1}",
+        "battery": "电池: {0}%",
+        "signal_strength": "信号强度: {0}dBm",
+        "signal_unknown": "信号强度: 未知",
+        "wave_title_a": "A通道波形",
+        "wave_title_b": "B通道波形",
+        "wave_y_label": "强度",
+        "wave_x_label": "时间"
     },
     
     "control": {
         "manual": "手动控制",
-        "test_a": "测试A通道+10",
-        "test_b": "测试B通道+10",
-        "clear_a": "清空A队列",
-        "clear_b": "清空B队列"
+        "test_a": "测试A通道",
+        "test_b": "测试B通道",
+        "clear_a": "清空A通道",
+        "clear_b": "清空B通道"
     },
     
     "log": {
-        "title": "运行日志",
         "show": "显示日志",
         "hide": "隐藏日志",
-        "clear": "清除日志"
+        "clear": "清除日志",
+        "title": "日志窗口"
     },
     
     "dialog": {
-        "choose_device": "选择蓝牙设备",
-        "refresh_devices": "刷新设备列表",
+        "ok": "确定",
         "cancel": "取消",
-        "error": "错误提示",
-        "bluetooth_not_available": "未检测到蓝牙功能，请检查设备蓝牙是否开启并正常工作",
-        "scan_failed": "扫描设备失败：{0}",
-        "scan_window_error": "打开扫描窗口时发生错误：{0}",
+        "error": "错误",
+        "choose_device": "选择设备",
+        "refresh_devices": "刷新设备列表",
+        "scanning": "正在扫描...",
         "scan_complete": "扫描完成",
         "no_devices_found": "未找到设备",
-        "scanning": "正在扫描设备...",
-        "invalid_url": "无效的WebSocket地址，请使用正确的格式（例如：ws://example.com）",
-        "save_config_failed": "保存配置失败，请检查文件权限或磁盘空间"
+        "scan_failed": "扫描失败: {0}",
+        "bluetooth_not_available": "蓝牙不可用",
+        "invalid_url": "无效的服务器地址",
+        "save_config_failed": "保存配置失败"
     },
     
     "status_updates": {
-        "server_updated": "✅ 服务器地址已更新并保存: {0}",
-        "server_update_failed": "❌ 服务器地址更新失败: {0}",
-        "device_selected": "✅ 已选择设备: {0}",
-        "device_id_updated": "设备ID已更新: {0}",
-        "please_select_device": "❌ 请先选择设备",
-        "bluetooth_connected": "🔵 蓝牙连接成功",
-        "connection_failed": "🔴 连接失败: {0}",
-        "battery_read_failed": "⚠️ 电量读取失败: {0}",
-        "get_device_id_success": "✅ 获取设备ID成功: {0}",
-        "get_device_id_failed": "❌ 获取设备ID失败: {0}",
-        "invalid_status_value": "❌ 状态更新值无效",
-        "queue_cleared": "♻️ 已清空{0}通道队列",
-        "command_send_success": "指令发送成功: {0}",
-        "command_send_failed": "发送失败: {0}",
-        "channel_over_limit": "⚠️ {0}通道超过上限{1}",
-        "strength_adjust_failed": "❌ 强度调节失败: {0}",
-        "message_process_error": "❌ 消息处理错误: {0}",
-        "strength_limit_updated": "✅ 强度上限更新并保存: A={0} B={1}",
-        "strength_limit_update_failed": "❌ 强度上限更新失败: A={0} B={1}",
-        "strength_limit_range_error": "❌ 强度上限必须在0-200之间",
-        "invalid_number": "❌ 请输入有效数字",
-        "server_address_empty": "❌ 请先设置服务器地址",
-        "network_error": "🔴 网络错误: {0}",
-        "received_command": "📥 收到指令: {0}...",
-        "theme_changed": "✨ 已切换到{0}模式",
-        "websocket_not_connected": "WebSocket未连接",
-        "websocket_message_sent": "消息已发送到服务器",
-        "websocket_send_failed": "发送消息到服务器失败: {0}",
-        "websocket_closed": "WebSocket连接已关闭",
-        "websocket_error": "处理WebSocket消息时出错: {0}"
+        "personalization_updated": "个性化设置已更新",
+        "theme_changed": "主题已切换为{0}",
+        "logs_cleared": "日志已清除",
+        "server_updated": "服务器地址已更新为: {0}",
+        "server_update_failed": "更新服务器地址失败: {0}",
+        "server_address_empty": "服务器地址不能为空",
+        "device_selected": "已选择设备: {0}",
+        "get_device_id_success": "获取设备ID成功: {0}",
+        "get_device_id_failed": "获取设备ID失败: {0}",
+        "bluetooth_connected": "蓝牙设备已连接",
+        "connection_failed": "连接失败: {0}",
+        "battery_read_failed": "读取电池电量失败: {0}",
+        "command_send_success": "命令发送成功 (特征值: {0})",
+        "command_send_failed": "命令发送失败: {0}",
+        "queue_cleared": "{0}通道队列已清空",
+        "received_command": "收到命令: {0}",
+        "network_error": "网络错误: {0}",
+        "message_process_error": "处理消息时出错: {0}",
+        "strength_limit_range_error": "强度限制必须在0-200之间",
+        "strength_limit_updated": "强度限制已更新 (A: {0}, B: {1})",
+        "strength_limit_update_failed": "更新强度限制失败 (A: {0}, B: {1})",
+        "invalid_number": "请输入有效的数字",
+        "channel_over_limit": "{0}通道超过最大强度限制: {1}",
+        "strength_adjust_failed": "调整强度失败: {0}",
+        "invalid_status_value": "无效的状态值"
     }
 } 
