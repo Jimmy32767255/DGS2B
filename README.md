@@ -9,7 +9,7 @@
 
 ## 需要安装的依赖列表：
 
- - Python 3.7+
+ - Python 3.6+
  - PySide6
  - qasync
  - websockets
