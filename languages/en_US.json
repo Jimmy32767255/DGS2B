@@ -9,6 +9,15 @@
         "dark": "Dark"
     },
     
+    "personalization": {
+        "button": "Personalization",
+        "title": "Personalization Settings",
+        "accent_color": "Accent Color",
+        "choose_color": "Choose Color",
+        "background": "Background Image",
+        "choose_image": "Choose Image"
+    },
+    
     "language": {
         "setting": "Language Settings"
     },
@@ -17,7 +26,7 @@
         "management": "Device Management",
         "scan": "Scan Devices",
         "connect": "Connect Device",
-        "status": "Current Device: {0}",
+        "status": "Device Status: {0}",
         "connected": "Connected",
         "disconnected": "Disconnected",
         "unknown": "Unknown Device"
@@ -26,86 +35,85 @@
     "server": {
         "config": "Server Configuration",
         "address": "Server Address:",
-        "save": "Save Server Address"
+        "save": "Save Address",
+        "connect": "Connect Server"
     },
     
     "strength": {
-        "config": "Strength Limit Configuration",
-        "channel_a_limit": "Channel A Limit:",
-        "channel_b_limit": "Channel B Limit:",
-        "save": "Save Configuration"
+        "config": "Strength Configuration",
+        "channel_a_limit": "Channel A Max Strength:",
+        "channel_b_limit": "Channel B Max Strength:",
+        "save": "Save Settings"
     },
     
     "status": {
         "realtime": "Real-time Status",
-        "channel_a": "Channel A Strength: {0}/{1}",
-        "channel_b": "Channel B Strength: {0}/{1}",
+        "channel_a": "Channel A: {0}/{1}",
+        "channel_b": "Channel B: {0}/{1}",
         "battery": "Battery: {0}%",
-        "signal_strength": "Signal: {0}dBm",
-        "signal_unknown": "Signal: --dBm",
-        "language_changed": "🌐 Switched to {0}"
+        "signal_strength": "Signal Strength: {0}dBm",
+        "signal_unknown": "Signal Strength: Unknown",
+        "wave_title_a": "Channel A Wave",
+        "wave_title_b": "Channel B Wave",
+        "wave_y_label": "Strength",
+        "wave_x_label": "Time"
     },
     
     "control": {
         "manual": "Manual Control",
-        "test_a": "Test Channel A +10",
-        "test_b": "Test Channel B +10",
-        "clear_a": "Clear Queue A",
-        "clear_b": "Clear Queue B"
+        "test_a": "Test Channel A",
+        "test_b": "Test Channel B",
+        "clear_a": "Clear Channel A",
+        "clear_b": "Clear Channel B"
     },
     
     "log": {
-        "title": "Operation Log",
+        "title": "Log Window",
         "show": "Show Log",
         "hide": "Hide Log",
         "clear": "Clear Log"
     },
     
     "dialog": {
-        "choose_device": "Select Bluetooth Device",
-        "refresh_devices": "Refresh Device List",
+        "ok": "OK",
         "cancel": "Cancel",
         "error": "Error",
-        "bluetooth_not_available": "Bluetooth functionality not detected. Please ensure your device has Bluetooth enabled and working properly.",
-        "scan_failed": "Failed to scan devices: {0}",
-        "scan_window_error": "Error occurred while opening scan window: {0}",
+        "choose_device": "Select Device",
+        "refresh_devices": "Refresh Device List",
+        "scanning": "Scanning...",
         "scan_complete": "Scan Complete",
         "no_devices_found": "No Devices Found",
-        "scanning": "Scanning for devices...",
-        "invalid_url": "Invalid WebSocket URL. Please use the correct format (e.g., ws://example.com)",
-        "save_config_failed": "Failed to save configuration. Please check file permissions or disk space"
+        "scan_failed": "Scan Failed: {0}",
+        "bluetooth_not_available": "Bluetooth Not Available",
+        "invalid_url": "Invalid Server Address",
+        "save_config_failed": "Failed to Save Configuration"
     },
     
     "status_updates": {
-        "server_updated": "✅ Server address updated and saved: {0}",
-        "server_update_failed": "❌ Failed to update server address: {0}",
-        "device_selected": "✅ Device selected: {0}",
-        "device_id_updated": "Device ID updated: {0}",
-        "please_select_device": "❌ Please select a device first",
-        "bluetooth_connected": "🔵 Bluetooth connected successfully",
-        "connection_failed": "🔴 Connection failed: {0}",
-        "battery_read_failed": "⚠️ Failed to read battery: {0}",
-        "get_device_id_success": "✅ Got device ID successfully: {0}",
-        "get_device_id_failed": "❌ Failed to get device ID: {0}",
-        "invalid_status_value": "❌ Invalid status update value",
-        "queue_cleared": "♻️ Cleared channel {0} queue",
-        "command_send_success": "Command sent successfully: {0}",
+        "personalization_updated": "Personalization settings updated",
+        "theme_changed": "Theme changed to {0}",
+        "logs_cleared": "Logs cleared",
+        "server_updated": "Server address updated to: {0}",
+        "server_update_failed": "Failed to update server address: {0}",
+        "server_address_empty": "Server address cannot be empty",
+        "device_selected": "Device selected: {0}",
+        "get_device_id_success": "Got device ID successfully: {0}",
+        "get_device_id_failed": "Failed to get device ID: {0}",
+        "bluetooth_connected": "Bluetooth device connected",
+        "connection_failed": "Connection failed: {0}",
+        "battery_read_failed": "Failed to read battery: {0}",
+        "command_send_success": "Command sent successfully (characteristic: {0})",
         "command_send_failed": "Failed to send command: {0}",
-        "channel_over_limit": "⚠️ Channel {0} exceeds limit {1}",
-        "strength_adjust_failed": "❌ Failed to adjust strength: {0}",
-        "message_process_error": "❌ Message processing error: {0}",
-        "strength_limit_updated": "✅ Strength limits updated and saved: A={0} B={1}",
-        "strength_limit_update_failed": "❌ Failed to update strength limits: A={0} B={1}",
-        "strength_limit_range_error": "❌ Strength limit must be between 0 and 200",
-        "invalid_number": "❌ Please enter valid numbers",
-        "server_address_empty": "❌ Please set server address first",
-        "network_error": "🔴 Network error: {0}",
-        "received_command": "📥 Received command: {0}...",
-        "theme_changed": "✨ Switched to {0} mode",
-        "websocket_not_connected": "WebSocket not connected",
-        "websocket_message_sent": "Message sent to server",
-        "websocket_send_failed": "Failed to send message to server: {0}",
-        "websocket_closed": "WebSocket connection closed",
-        "websocket_error": "Error processing WebSocket message: {0}"
+        "queue_cleared": "Channel {0} queue cleared",
+        "received_command": "Received command: {0}",
+        "network_error": "Network error: {0}",
+        "message_process_error": "Error processing message: {0}",
+        "strength_limit_range_error": "Strength limit must be between 0-200",
+        "strength_limit_updated": "Strength limits updated (A: {0}, B: {1})",
+        "strength_limit_update_failed": "Failed to update strength limits (A: {0}, B: {1})",
+        "invalid_number": "Please enter a valid number",
+        "channel_over_limit": "Channel {0} exceeds max strength limit: {1}",
+        "strength_adjust_failed": "Failed to adjust strength: {0}",
+        "invalid_status_value": "Invalid status value"
     }
 } 
